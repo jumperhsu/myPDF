@@ -1,0 +1,227 @@
+<!doctype html>
+<html lang="zh-Hant">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#1677ff">
+<title>台灣手機安裝支付寶＋綁定信用卡攻略｜Android・iPhone</title>
+<style>
+:root{--blue:#1677ff;--navy:#17345c;--ink:#263449;--muted:#68778c;--paper:#f5f8fc;--line:#e4ebf4;--green:#168653;--gold:#c88716;--shadow:0 12px 34px rgba(31,65,112,.09)}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:var(--paper);color:var(--ink);font-family:system-ui,-apple-system,"Noto Sans TC","Microsoft JhengHei",sans-serif;line-height:1.75}
+a{color:#1266cf;text-decoration:none}a:hover{text-decoration:underline}.wrap{max-width:1040px;margin:auto;padding:24px}
+.hero{position:relative;overflow:hidden;border-radius:28px;padding:42px 38px;color:white;background:linear-gradient(120deg,#123d79,#1677ff 65%,#48b4df);box-shadow:var(--shadow)}
+.hero:after{content:"";position:absolute;width:290px;height:290px;border:42px solid #ffffff20;border-radius:50%;right:-65px;top:-95px}
+.kicker{font-size:.82rem;letter-spacing:.12em;font-weight:800;opacity:.85}.hero h1{font-size:clamp(2rem,5vw,3.3rem);line-height:1.2;margin:12px 0}.hero p{max-width:670px;margin:12px 0 0;color:#eaf3ff}.chips{display:flex;flex-wrap:wrap;gap:8px;margin-top:20px}.chip{padding:6px 12px;border:1px solid #ffffff65;border-radius:999px;font-size:.85rem;background:#ffffff16}
+nav{display:flex;flex-wrap:wrap;gap:8px;margin:18px 0 28px;padding:12px;background:white;border:1px solid var(--line);border-radius:16px}
+nav a{font-size:.88rem;padding:6px 10px;border-radius:9px;background:#f2f6fc;color:#315477}
+section{background:white;border:1px solid var(--line);border-radius:22px;padding:26px;margin:18px 0;box-shadow:0 5px 20px #203b5b08}
+h2{font-size:1.45rem;margin:0 0 16px;color:var(--navy)}h3{font-size:1.05rem;margin:0 0 8px;color:#23466e}p{margin:8px 0}.muted,.small{color:var(--muted)}.small{font-size:.86rem}
+.grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:14px}.three{grid-template-columns:repeat(3,minmax(0,1fr))}
+.card{border:1px solid var(--line);border-radius:16px;padding:17px;background:#fff}.soft{background:#f4f8ff}.green{background:#effaf4;border-color:#cdebd9}.gold{background:#fff8e9;border-color:#f1dfb8}
+.platform{display:flex;align-items:center;gap:14px}.platform .emoji{font-size:2.4rem}.platform p{font-size:.9rem;color:var(--muted)}
+.art{height:142px;border-radius:14px;background:linear-gradient(135deg,#e8f2ff,#f5f9ff);display:flex;align-items:center;justify-content:center;margin:12px 0;overflow:hidden}
+.phone{width:76px;height:125px;border:5px solid #243d5e;border-radius:16px;background:white;box-shadow:0 7px 16px #17345c22;position:relative;padding:12px 7px}
+.phone:before{content:"";position:absolute;top:4px;left:26px;width:16px;height:4px;border-radius:5px;background:#243d5e}
+.screenlogo{margin:13px auto 8px;width:35px;height:35px;border-radius:11px;background:#1677ff;color:white;display:grid;place-items:center;font-weight:900}
+.line{height:5px;border-radius:5px;background:#dbe7f5;margin:7px 3px}.line.short{width:55%}.qr{display:grid;grid-template-columns:repeat(5,7px);gap:2px;padding:8px;background:white;border:1px solid #d5e1ef;border-radius:7px}
+.qr i{width:7px;height:7px;background:#18385d}.qr i:nth-child(3n),.qr i:nth-child(4n){background:white}
+.steps{counter-reset:step;display:grid;gap:12px}.step{position:relative;padding:14px 16px 14px 58px;border:1px solid var(--line);border-radius:14px;background:#fff}.step:before{counter-increment:step;content:counter(step);position:absolute;left:15px;top:15px;width:29px;height:29px;display:grid;place-items:center;border-radius:50%;background:#eaf3ff;color:#1266cf;font-weight:800}
+ul,ol{padding-left:1.35rem}li{margin:5px 0}
+table{width:100%;border-collapse:collapse;margin:12px 0;font-size:.94rem}th,td{padding:11px 12px;border-bottom:1px solid var(--line);text-align:left;vertical-align:top}th{background:#f3f7fc;color:#355372}
+.callout{border-left:4px solid var(--blue);padding:12px 15px;background:#f1f7ff;border-radius:8px;margin:14px 0}.warning{border-left-color:#d69a25;background:#fff8e9}
+.fee{font-size:2rem;font-weight:850;line-height:1.2}.checklist{display:grid;gap:10px}.checklist label{display:flex;gap:10px;align-items:flex-start;padding:9px 11px;border:1px solid var(--line);border-radius:10px;cursor:pointer}.checklist input{margin-top:6px;accent-color:var(--green);width:17px;height:17px}
+.progress{height:8px;background:#e9eef5;border-radius:99px;overflow:hidden;margin:10px 0 16px}.progress span{display:block;height:100%;width:0;background:#1a9a62;transition:width .2s}
+footer{text-align:center;color:var(--muted);padding:28px 10px;font-size:.85rem}
+@media(max-width:700px){.wrap{padding:14px}.hero{padding:30px 23px;border-radius:20px}section{padding:20px 16px;border-radius:17px}.grid,.three{grid-template-columns:1fr}.hero:after{right:-180px}nav{gap:5px}nav a{font-size:.8rem}}
+@media print{body{background:white}.wrap{max-width:none;padding:0}.hero,section{box-shadow:none;break-inside:avoid}nav{display:none}a{color:inherit;text-decoration:underline}}
+</style>
+</head>
+<body>
+<div class="wrap">
+<header class="hero">
+  <div class="kicker">TAIWAN TRAVEL PAYMENT GUIDE · 2026</div>
+  <h1>台灣手機安裝支付寶<br>＋綁定信用卡完整攻略</h1>
+  <p>Android 與 iPhone 雙平台教學｜台灣門號註冊、身分認證、綁定信用卡、掃碼付款與費用提醒。</p>
+  <div class="chips"><span class="chip">Android</span><span class="chip">iPhone / iOS</span><span class="chip">台灣手機門號</span><span class="chip">Visa・Mastercard・JCB</span></div>
+</header>
+
+<nav aria-label="頁面目錄">
+  <a href="#intro">使用前準備</a><a href="#install">下載安裝</a><a href="#register">手機註冊</a><a href="#verify">實名認證</a><a href="#card">綁定信用卡</a><a href="#pay">付款方式</a><a href="#fee">手續費</a><a href="#faq">疑難排解</a><a href="#check">出發檢查表</a>
+</nav>
+
+<section id="intro">
+<h2>01｜台灣人可以使用支付寶嗎？</h2>
+<div class="grid">
+  <div class="card green"><h3>✓ 可以使用</h3><p>台灣旅客可使用台灣手機號碼註冊支付寶，依帳戶要求完成身分驗證，再綁定符合資格的台灣發行國際信用卡。</p></div>
+  <div class="card soft"><h3>出發前先準備</h3><ul><li>台灣手機門號（+886）</li><li>台灣發行的國際信用卡</li><li>台胞證或護照（依認證選項）</li><li>可接收簡訊的手機</li><li>已開啟海外交易功能的信用卡</li></ul></div>
+</div>
+<div class="callout warning"><b>注意：</b>請下載中國大陸版「支付寶 Alipay」，確認開發商及官方商店來源。不要從不明網站下載 APK。</div>
+</section>
+
+<section id="install">
+<h2>02｜Android 與 iPhone 下載安裝</h2>
+<div class="grid">
+  <div class="card">
+    <div class="platform"><div class="emoji">🤖</div><div><h3>Android</h3><p>Samsung、Google Pixel、ASUS、Sony 等</p></div></div>
+    <div class="art"><div class="phone"><div class="screenlogo">支</div><div class="line"></div><div class="line short"></div><div class="line"></div></div></div>
+    <ol><li>開啟 Google Play。</li><li>搜尋「Alipay」或「支付寶」。</li><li>確認開發商為 Alipay (Hangzhou) Technology Co., Ltd.</li><li>點選「安裝」並開啟 App。</li></ol>
+    <p><a href="https://play.google.com/store/apps/details?id=com.eg.android.AlipayGphone" target="_blank" rel="noopener">前往 Google Play 官方下載 ↗</a></p>
+    <p class="small">Android 套件名稱：com.eg.android.AlipayGphone</p>
+  </div>
+  <div class="card">
+    <div class="platform"><div class="emoji">🍎</div><div><h3>iPhone / iOS</h3><p>iPhone、iPad</p></div></div>
+    <div class="art"><div class="phone"><div class="screenlogo">支</div><div class="line"></div><div class="line short"></div><div class="line"></div></div></div>
+    <ol><li>開啟 iPhone 的 App Store。</li><li>搜尋「Alipay」。</li><li>確認開發商為 Alipay (Hangzhou) Technology Co., Ltd.</li><li>點選「取得」，完成下載。</li></ol>
+    <p><a href="https://apps.apple.com/app/alipay-simplify-your-life/id333206289" target="_blank" rel="noopener">前往 App Store 官方下載 ↗</a></p>
+  </div>
+</div>
+<p class="small">若商店無法搜尋到，先確認 Apple／Google 帳號的商店地區及 App 可用性。請勿安裝來源不明的安裝檔。</p>
+</section>
+
+<section id="register">
+<h2>03｜使用台灣手機號碼註冊</h2>
+<div class="art">
+  <div class="phone"><div class="screenlogo">支</div><div style="font-size:9px;text-align:center;color:#405a78">+886　台灣</div><div class="line"></div><div class="line"></div><div style="font-size:9px;text-align:center;background:#1677ff;color:white;border-radius:5px;padding:3px;margin:8px 2px">取得驗證碼</div></div>
+  <div style="font-size:2rem;margin:0 18px">➜</div><div class="card" style="max-width:170px;text-align:center"><b>SMS</b><div style="font-size:1.5rem;letter-spacing:5px;color:#1677ff">••••••</div><small>簡訊驗證碼</small></div>
+</div>
+<div class="steps">
+  <div class="step"><b>開啟支付寶</b><br>點選「註冊／Sign Up」或新使用者註冊。</div>
+  <div class="step"><b>選擇國家／地區</b><br>選擇 Taiwan（+886）。</div>
+  <div class="step"><b>輸入台灣手機號碼</b><br>例如 0912-345-678，若國碼已選 +886，通常輸入 912345678，不要重複輸入國碼。</div>
+  <div class="step"><b>接收簡訊驗證碼</b><br>輸入手機收到的 SMS 驗證碼。</div>
+  <div class="step"><b>設定登入密碼</b><br>依 App 提示設定密碼並完成註冊。</div>
+</div>
+<div class="callout"><b>小提醒：</b>建議在台灣先完成註冊，確認能登入並收取驗證碼，不要等到抵達中國大陸才第一次操作。</div>
+</section>
+
+<section id="verify">
+<h2>04｜實名認證</h2>
+<div class="art">
+  <div class="card" style="width:210px;text-align:center"><div style="font-size:2rem">🪪</div><b>身分資料驗證</b><div class="line"></div><div class="line"></div><div class="line short"></div><div style="margin-top:8px;background:#e8f3ff;color:#1765bb;border-radius:7px;padding:5px">依畫面提交資料</div></div>
+  <div style="font-size:2rem;margin:0 20px">➜</div><div class="card" style="text-align:center"><div style="font-size:2.5rem">🤳</div><b>人臉辨識</b><p class="small">依系統要求操作</p></div>
+</div>
+<div class="steps">
+  <div class="step">登入支付寶，點選右下角「我的（Me）」。</div>
+  <div class="step">點選個人頭像或帳戶設定，尋找「身分認證／實名認證（Identity Verification）」。</div>
+  <div class="step">選擇 App 提供的證件類型。</div>
+  <div class="step">依畫面輸入證件資料或上傳證件影像。</div>
+  <div class="step">若要求人臉辨識，依指示完成並等待審核。</div>
+</div>
+<div class="card gold"><h3>台灣旅客證件提醒</h3><ul><li><b>台胞證：</b>若系統提供此選項，可依指示優先使用。</li><li><b>護照：</b>若系統提供護照選項，可依指示使用。</li><li><b>台灣身分證：</b>不要自行假設可取代台胞證或護照。</li></ul><p class="small">實際證件類型及認證要求以你的支付寶帳戶畫面為準。</p></div>
+</section>
+
+<section id="card">
+<h2>05｜綁定台灣信用卡</h2>
+<div class="art">
+  <div class="card" style="width:230px;background:linear-gradient(135deg,#174b8e,#1686dc);color:white;border:0">
+    <div style="display:flex;justify-content:space-between"><b>信用卡</b><span>VISA</span></div><div style="font-size:1.5rem;letter-spacing:3px;margin:22px 0">•••• •••• •••• 1234</div><small>持卡人姓名　　有效期限</small>
+  </div>
+  <div style="font-size:2rem;margin:0 20px">➜</div>
+  <div class="card" style="text-align:center"><div style="font-size:2rem">✓</div><b>新增成功</b><p class="small">已加入銀行卡</p></div>
+</div>
+<div class="steps">
+  <div class="step"><b>進入「我的」</b><br>開啟支付寶，點選右下角「我的（Me）」。</div>
+  <div class="step"><b>選擇「銀行卡（Bank Cards）」</b><br>進入銀行卡管理頁面。</div>
+  <div class="step"><b>新增信用卡</b><br>點選「＋ 添加銀行卡（Add Bank Card）」。</div>
+  <div class="step"><b>輸入信用卡資料</b><br>依畫面填寫卡號、英文持卡人姓名、有效期限、CVV，以及其他要求的資料。</div>
+  <div class="step"><b>完成銀行驗證</b><br>依發卡銀行要求，透過簡訊 OTP、銀行 App 或 3D Secure 驗證。</div>
+  <div class="step"><b>確認綁卡成功</b><br>返回「銀行卡」頁面，檢查卡片是否顯示。</div>
+</div>
+<h3 style="margin-top:20px">可嘗試綁定的國際卡組織</h3>
+<table><thead><tr><th>卡組織</th><th>使用建議</th></tr></thead><tbody>
+<tr><td>Visa</td><td>可嘗試，仍依發卡銀行與帳戶資格</td></tr>
+<tr><td>Mastercard</td><td>可嘗試，仍依發卡銀行與帳戶資格</td></tr>
+<tr><td>JCB</td><td>部分台灣發行卡可使用，依卡片資格</td></tr>
+<tr><td>American Express</td><td>依卡片及帳戶資格確認</td></tr>
+</tbody></table>
+<div class="callout warning"><b>安全提醒：</b>不要把信用卡完整卡號、CVV、簡訊 OTP 或支付密碼傳給任何代辦人員。只在官方 App 內輸入必要資料。</div>
+</section>
+
+<section id="pay">
+<h2>06｜在中國大陸如何付款？</h2>
+<div class="grid">
+  <div class="card">
+    <h3>方式 A｜掃描商家收款碼</h3>
+    <div class="art"><div class="qr">
+      <i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i>
+    </div></div>
+    <ol><li>開啟支付寶。</li><li>點選首頁「掃一掃（Scan）」。</li><li>掃描商家的收款 QR Code。</li><li>輸入金額（若未自動帶入）。</li><li>確認付款方式為已綁定的台灣信用卡。</li><li>確認付款並查看交易結果。</li></ol>
+  </div>
+  <div class="card">
+    <h3>方式 B｜出示付款碼</h3>
+    <div class="art"><div class="card" style="text-align:center;width:205px"><div style="font-size:1.8rem">▥</div><b>付款碼示意</b><div style="font-size:1.3rem;letter-spacing:3px;margin:8px 0">▥ ▥ ▥ ▥ ▥</div><small>請讓店員掃描</small></div></div>
+    <ol><li>開啟支付寶。</li><li>點選「付錢／收錢」或「付款碼」。</li><li>顯示付款條碼或 QR Code。</li><li>讓店員掃描。</li><li>確認交易成功。</li></ol>
+  </div>
+</div>
+<p class="small">以上為一般操作示意，實際按鈕名稱、位置及可用付款方式可能隨 App 版本、帳戶狀態及商家而不同。</p>
+</section>
+
+<section id="fee">
+<h2>07｜信用卡付款手續費</h2>
+<p>境外信用卡綁定支付寶消費，可能同時涉及支付寶平台服務費及台灣發卡銀行的海外交易手續費。</p>
+<div class="grid">
+  <div class="card green"><div class="fee" style="color:#168653">0%</div><b>單筆人民幣 200 元（含）以下</b><p class="small">一般規則下，支付寶平台通常免收國際卡服務費。</p></div>
+  <div class="card gold"><div class="fee" style="color:#b77b11">3%</div><b>單筆超過人民幣 200 元</b><p class="small">常見國際卡平台服務費率；付款確認頁為準。</p></div>
+</div>
+<div class="callout">台灣銀行可能另收海外交易服務費。例如部分銀行公告費率為 1.5%，各銀行及卡別不同，請向發卡銀行確認。</div>
+<h3>費用試算示意</h3>
+<table><thead><tr><th>消費金額</th><th>支付寶服務費</th><th>銀行海外交易費（假設 1.5%）</th></tr></thead><tbody>
+<tr><td>¥100</td><td>¥0</td><td>約消費金額的 1.5%</td></tr>
+<tr><td>¥200</td><td>¥0</td><td>約消費金額的 1.5%</td></tr>
+<tr><td>¥300</td><td>¥9</td><td>約消費金額的 1.5%</td></tr>
+<tr><td>¥500</td><td>¥15</td><td>約消費金額的 1.5%</td></tr>
+<tr><td>¥1,000</td><td>¥30</td><td>約消費金額的 1.5%</td></tr>
+</tbody></table>
+<p class="small">試算假設超過 ¥200 時以整筆交易金額計算 3% 平台費，銀行費用另計；實際費率、計算方式及匯率以付款頁與銀行帳單為準。</p>
+</section>
+
+<section id="faq">
+<h2>08｜常見問題與故障排除</h2>
+<table><thead><tr><th>遇到的問題</th><th>建議處理方式</th></tr></thead><tbody>
+<tr><td>收不到台灣簡訊</td><td>確認 +886 國碼、手機訊號及門號是否可接收國際簡訊。</td></tr>
+<tr><td>找不到台灣地區</td><td>確認選擇的是國際手機號碼註冊流程。</td></tr>
+<tr><td>無法實名認證</td><td>核對證件類型、姓名拼音及證件資料，依 App 提供的選項操作。</td></tr>
+<tr><td>信用卡無法綁定</td><td>確認卡號、有效期限、CVV、卡片狀態及海外交易設定。</td></tr>
+<tr><td>收不到銀行驗證碼</td><td>聯繫發卡銀行，確認海外簡訊或 3D Secure 驗證功能。</td></tr>
+<tr><td>付款被拒絕</td><td>確認商家支援、卡片海外交易、交易額度及支付寶風控提示。</td></tr>
+<tr><td>已綁卡但不能轉帳</td><td>境外信用卡通常用於合資格商家消費，不等於中國大陸銀行帳戶，通常不能用來個人轉帳或發紅包。</td></tr>
+</tbody></table>
+</section>
+
+<section id="check">
+<h2>09｜出發前檢查清單</h2>
+<p class="muted">完成一項就勾選一項，進度會自動更新。</p>
+<div class="progress"><span id="bar"></span></div><p id="count" class="small">已完成 0 / 8 項</p>
+<div class="checklist" id="checks">
+<label><input type="checkbox"> Android／iPhone 已安裝正確的支付寶 App</label>
+<label><input type="checkbox"> 已使用台灣 +886 手機號碼註冊</label>
+<label><input type="checkbox"> 已依要求完成帳戶身分認證</label>
+<label><input type="checkbox"> 已成功綁定台灣信用卡</label>
+<label><input type="checkbox"> 已確認銀行海外交易功能開啟</label>
+<label><input type="checkbox"> 已確認銀行簡訊 OTP 可以接收</label>
+<label><input type="checkbox"> 已在出發前確認可以登入及付款</label>
+<label><input type="checkbox"> 已準備少量人民幣現金備用</label>
+</div>
+</section>
+
+<section id="refs">
+<h2>10｜官方下載與參考資源</h2>
+<ul>
+<li><a href="https://play.google.com/store/apps/details?id=com.eg.android.AlipayGphone" target="_blank" rel="noopener">Google Play：Alipay 官方 App</a></li>
+<li><a href="https://apps.apple.com/app/alipay-simplify-your-life/id333206289" target="_blank" rel="noopener">Apple App Store：Alipay 官方 App</a></li>
+<li><a href="https://global.alipay.com/" target="_blank" rel="noopener">Alipay Global 官方網站</a></li>
+<li><a href="https://www.alipay.com/" target="_blank" rel="noopener">支付寶官方網站</a></li>
+<li><a href="https://www.esunbank.com/" target="_blank" rel="noopener">玉山銀行官方網站（信用卡海外交易與支付寶相關說明請以最新公告為準）</a></li>
+</ul>
+<div class="callout warning"><b>資訊更新提醒：</b>支付寶介面、可接受的證件、信用卡支援範圍及手續費可能調整。此頁為一般操作攻略，實際請以支付寶 App 內顯示、官方公告及發卡銀行最新規定為準。</div>
+</section>
+
+<footer>台灣旅客支付寶設定攻略｜Android &amp; iPhone<br>建議收藏本頁，出發前再次確認官方規定與信用卡海外交易設定。</footer>
+</div>
+<script>
+const boxes=[...document.querySelectorAll('#checks input')],bar=document.getElementById('bar'),count=document.getElementById('count');
+function update(){const n=boxes.filter(x=>x.checked).length;bar.style.width=(n/boxes.length*100)+'%';count.textContent=`已完成 ${n} / ${boxes.length} 項`;}
+boxes.forEach(x=>x.addEventListener('change',update));update();
+</script>
+</body>
+</html>

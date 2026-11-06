@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="台灣使用者安裝 WeChat、註冊帳號、開通微信支付及綁定信用卡的完整教學。">
+<title>台灣手機安裝微信・綁定信用卡付款教學手冊</title>
+<style>
+:root{--ink:#26352f;--muted:#68766f;--green:#16a36a;--green2:#e9f6ef;--gold:#d5a84d;--paper:#fbfaf6;--line:#e5e8e1;--white:#fff;--red:#a94c3b;--shadow:0 10px 28px rgba(32,55,43,.08)}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:var(--paper);color:var(--ink);font-family:-apple-system,BlinkMacSystemFont,"Segoe UI","Noto Sans TC","Microsoft JhengHei",sans-serif;line-height:1.75}
+a{color:#087b53;text-decoration:none}a:hover{text-decoration:underline}.wrap{max-width:1100px;margin:auto;padding:0 22px}
+.hero{background:linear-gradient(125deg,#163e32,#1d7654 68%,#d0a54d);color:#fff;padding:58px 0 48px;position:relative;overflow:hidden}
+.hero:after{content:"";position:absolute;width:360px;height:360px;border:1px solid #ffffff35;border-radius:50%;right:-90px;top:-160px;box-shadow:0 0 0 35px #ffffff0c,0 0 0 75px #ffffff0a}
+.kicker{font-size:.82rem;letter-spacing:.15em;color:#e5d4a5;font-weight:700}.hero h1{font-size:clamp(2rem,5vw,3.35rem);line-height:1.2;margin:12px 0 16px;max-width:780px}.hero p{max-width:720px;color:#e5f0e9;margin:0;font-size:1.06rem}.hero-meta{display:flex;gap:10px;flex-wrap:wrap;margin-top:24px}.pill{border:1px solid #ffffff65;border-radius:99px;padding:5px 12px;font-size:.82rem}
+.toolbar{position:sticky;top:0;z-index:10;background:#fbfaf6ed;backdrop-filter:blur(10px);border-bottom:1px solid var(--line)}.toolbar .wrap{display:flex;align-items:center;justify-content:space-between;gap:12px;padding-top:10px;padding-bottom:10px}.brand{font-weight:800;font-size:.92rem}.actions{display:flex;gap:8px}.btn{border:1px solid var(--line);background:#fff;color:var(--ink);padding:8px 13px;border-radius:9px;cursor:pointer;font:inherit;font-size:.88rem}.btn.primary{background:var(--green);color:#fff;border-color:var(--green)}
+.layout{display:grid;grid-template-columns:245px minmax(0,1fr);gap:34px;padding-top:32px;padding-bottom:70px}.side{position:sticky;top:70px;align-self:start;background:#fff;border:1px solid var(--line);border-radius:14px;padding:18px;box-shadow:var(--shadow)}.side strong{display:block;margin-bottom:8px}.side a{display:block;color:#53645b;padding:5px 0;font-size:.9rem}.side a:hover{color:var(--green)}main{min-width:0}
+.notice{border:1px solid #d7e9dc;background:var(--green2);padding:17px 19px;border-radius:12px;margin-bottom:25px}.notice b{color:#126844}.warning{border-left:4px solid var(--gold);background:#fff8e9;padding:15px 18px;border-radius:8px;margin:18px 0}.danger{border-left:4px solid var(--red);background:#fff1ee;padding:15px 18px;border-radius:8px;margin:18px 0}
+section{scroll-margin-top:82px;margin:0 0 38px}.section-head{display:flex;align-items:center;gap:12px;margin-bottom:14px}.num{width:38px;height:38px;display:grid;place-items:center;border-radius:12px;background:#e4f3e9;color:#087b53;font-weight:800;flex:none}.section-head h2{font-size:1.45rem;margin:0;line-height:1.35}.lead{color:var(--muted);margin:0 0 18px}
+.card{background:#fff;border:1px solid var(--line);border-radius:14px;padding:20px;margin:14px 0;box-shadow:0 4px 16px rgba(32,55,43,.035)}.card h3{margin:0 0 8px;font-size:1.08rem}.step{display:grid;grid-template-columns:36px 1fr;gap:12px;padding:13px 0;border-bottom:1px solid #edf0eb}.step:last-child{border-bottom:0}.stepno{width:30px;height:30px;border-radius:50%;background:#edf6ef;color:#087b53;font-weight:800;display:grid;place-items:center}.step p{margin:3px 0 0}.muted{color:var(--muted)}.tag{display:inline-block;background:#f0f4ef;color:#52635a;border-radius:6px;padding:1px 7px;font-size:.82rem;margin:2px}
+.grid2{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:14px}.grid3{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:12px}.mini{background:#f8faf7;border:1px solid var(--line);padding:14px;border-radius:11px}.mini b{display:block;margin-bottom:5px}
+table{width:100%;border-collapse:collapse;margin:12px 0;font-size:.94rem}th,td{text-align:left;padding:11px 12px;border-bottom:1px solid var(--line);vertical-align:top}th{background:#f4f7f2;font-weight:700}
+details{border:1px solid var(--line);border-radius:11px;background:#fff;margin:10px 0;padding:0 15px}summary{cursor:pointer;padding:13px 0;font-weight:700}details .answer{padding:0 0 14px;color:#526159}
+.checklist label{display:flex;gap:10px;align-items:flex-start;padding:8px 0;border-bottom:1px dashed #e6eae4;cursor:pointer}.checklist input{margin-top:7px;accent-color:var(--green);width:17px;height:17px;flex:none}
+.flow{display:flex;align-items:center;gap:8px;flex-wrap:wrap;margin:15px 0}.flow span{background:#f0f6f1;border:1px solid #dce9df;border-radius:8px;padding:7px 10px;font-size:.88rem}.arrow{color:var(--gold);font-weight:800}
+.small{font-size:.86rem;color:var(--muted)}.source-list li{margin:8px 0;overflow-wrap:anywhere}.footer{background:#183d32;color:#dce9e1;padding:28px 0}.footer a{color:#bdebd1}
+@media(max-width:800px){.layout{grid-template-columns:1fr}.side{position:static;display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:2px 12px}.side strong{grid-column:1/-1}.grid3{grid-template-columns:1fr}.toolbar .brand{font-size:.8rem}}
+@media(max-width:560px){.wrap{padding:0 15px}.hero{padding:42px 0 36px}.layout{padding-top:20px}.grid2{grid-template-columns:1fr}.side{grid-template-columns:1fr 1fr}.section-head h2{font-size:1.25rem}.card{padding:16px}table{font-size:.86rem}th,td{padding:8px}}
+@media print{.toolbar,.side,.actions{display:none!important}.layout{display:block;padding:0}.hero{background:#fff;color:#183d32;padding:20px 0}.hero p,.kicker{color:#455c50}.hero:after{display:none}body{background:#fff;font-size:10.5pt}.card,.notice,details{break-inside:avoid;box-shadow:none}a{color:#111;text-decoration:underline}.footer{background:#fff;color:#333;border-top:1px solid #ccc}}
+</style>
+</head>
+<body>
+<header class="hero">
+ <div class="wrap">
+  <div class="kicker">TAIWAN USER GUIDE · WECHAT PAY</div>
+  <h1>台灣手機安裝微信<br>信用卡付款設定教學手冊</h1>
+  <p>從下載 WeChat、台灣門號註冊，到開通微信支付、綁定台灣信用卡與實際掃碼付款，一步一步完成。建議在台灣出發前先設定並測試。</p>
+  <div class="hero-meta"><span class="pill">適用 iPhone / Android</span><span class="pill">台灣 +886 門號</span><span class="pill">繁體中文教學</span><span class="pill">資料整理：2026-11-07</span></div>
+ </div>
+</header>
+<div class="toolbar"><div class="wrap"><div class="brand">微信安裝與付款設定指南</div><div class="actions"><button class="btn" onclick="window.print()">列印／另存 PDF</button><button class="btn primary" onclick="document.getElementById('checklist').scrollIntoView()">出發前檢查</button></div></div></div>
+<div class="wrap layout">
+<nav class="side" aria-label="目錄">
+ <strong>教學目錄</strong>
+ <a href="#overview">01｜先了解流程</a><a href="#install">02｜下載安裝</a>
+ <a href="#register">03｜註冊微信</a><a href="#activate">04｜開通微信支付</a>
+ <a href="#verify">05｜身分認證</a><a href="#bind">06｜綁定信用卡</a>
+ <a href="#pay">07｜實際付款</a><a href="#fees">08｜費用與限制</a>
+ <a href="#trouble">09｜問題排除</a><a href="#checklist">10｜出發前檢查</a><a href="#sources">官方資料</a>
+</nav>
+<main>
+<div class="notice"><b>先看重點：</b>台灣使用者通常可用台灣手機號碼註冊 WeChat；微信帳號註冊成功，不代表微信支付已經開通。綁定境外信用卡後，主要用於中國大陸境內符合條件的商戶消費，並非完整的中國銀行帳戶功能。</div>
+
+<section id="overview">
+ <div class="section-head"><span class="num">01</span><h2>先了解整體設定流程</h2></div>
+ <p class="lead">建議依照以下順序操作。各版本 App 的按鈕名稱可能略有不同，請以手機畫面實際顯示為準。</p>
+ <div class="flow"><span>下載 WeChat</span><b class="arrow">→</b><span>註冊帳號</span><b class="arrow">→</b><span>進入服務／錢包</span><b class="arrow">→</b><span>身分資料（如要求）</span><b class="arrow">→</b><span>新增信用卡</span><b class="arrow">→</b><span>測試付款</span></div>
+ <div class="grid2">
+  <div class="mini"><b>需要準備</b>可收簡訊的台灣手機門號、本人信用卡、信用卡預留手機、有效台胞證（如系統要求身分認證）。</div>
+  <div class="mini"><b>重要觀念</b>台灣信用卡能否綁定，仍取決於卡組織、發卡銀行授權、微信帳戶狀態及風控審核，並非每張卡都保證成功。</div>
+ </div>
+ <div class="warning"><b>台灣使用者身分文件：</b>若以台灣居民身分前往中國大陸，通常應準備有效的「台灣居民來往大陸通行證」（俗稱台胞證）。請依微信支付實名認證頁面提供的證件類型操作；不要把台灣身分證當成台胞證使用。</div>
+</section>
+
+<section id="install">
+ <div class="section-head"><span class="num">02</span><h2>下載並安裝 WeChat</h2></div>
+ <p class="lead">請從手機官方應用程式商店下載，確認開發者為 WeChat／騰訊相關官方發行者，避免安裝來路不明的 APK 或仿冒程式。</p>
+ <div class="grid2">
+  <div class="card"><h3>iPhone／iPad（iOS）</h3><div class="step"><span class="stepno">1</span><div>開啟 App Store。</div></div><div class="step"><span class="stepno">2</span><div>搜尋 <b>WeChat</b>。</div></div><div class="step"><span class="stepno">3</span><div>確認 App 名稱為 WeChat，再點選「取得」安裝。</div></div><p><a href="https://apps.apple.com/app/wechat/id414478124" target="_blank" rel="noopener">前往 Apple App Store 官方頁面 ↗</a></p></div>
+  <div class="card"><h3>Android</h3><div class="step"><span class="stepno">1</span><div>開啟 Google Play 商店。</div></div><div class="step"><span class="stepno">2</span><div>搜尋 <b>WeChat</b>。</div></div><div class="step"><span class="stepno">3</span><div>確認 App 為官方 WeChat，再點選「安裝」。</div></div><p><a href="https://play.google.com/store/apps/details?id=com.tencent.mm" target="_blank" rel="noopener">前往 Google Play 官方頁面 ↗</a></p></div>
+ </div>
+ <div class="warning">若商店顯示「此項目在你所在的國家／地區無法使用」，先確認 Apple／Google 帳號地區及裝置相容性；不要任意下載第三方修改版或要求提供帳密的安裝包。</div>
+</section>
+
+<section id="register">
+ <div class="section-head"><span class="num">03</span><h2>使用台灣手機號碼註冊微信</h2></div>
+ <div class="card">
+  <div class="step"><span class="stepno">1</span><div>開啟 WeChat，選擇「註冊」或 <b>Sign Up</b>。</div></div>
+  <div class="step"><span class="stepno">2</span><div>選擇以手機號碼註冊；國家／地區選擇 Taiwan（台灣），國碼為 <b>+886</b>。</div></div>
+  <div class="step"><span class="stepno">3</span><div>輸入手機號碼。若國碼已選 +886，通常依畫面格式輸入手機號碼，是否省略開頭 0 以欄位提示為準。</div></div>
+  <div class="step"><span class="stepno">4</span><div>設定姓名／暱稱及登入密碼，閱讀並同意服務條款與隱私政策。</div></div>
+  <div class="step"><span class="stepno">5</span><div>依畫面完成簡訊驗證碼或安全驗證。部分新帳號可能需要額外安全驗證，例如依指示請既有微信用戶協助。</div></div>
+  <div class="step"><span class="stepno">6</span><div>註冊完成後，確認能正常登入，並綁定常用手機或電子郵件（若 App 提供此選項）。</div></div>
+ </div>
+ <div class="danger"><b>安全提醒：</b>不要把簡訊驗證碼、登入密碼或付款密碼交給任何「代註冊／代開通」服務。微信的安全驗證條件可能因帳號、地區及風控狀態而不同，無法保證每個新帳號都採用相同流程。</div>
+</section>
+
+<section id="activate">
+ <div class="section-head"><span class="num">04</span><h2>找到並開通微信支付</h2></div>
+ <p class="lead">完成微信帳號註冊後，進入個人頁面尋找支付入口。</p>
+ <div class="card">
+  <div class="step"><span class="stepno">1</span><div>點選右下角「我」（Me）。</div></div>
+  <div class="step"><span class="stepno">2</span><div>點選「服務」（Services）。部分版本可能顯示「支付」（Pay）。</div></div>
+  <div class="step"><span class="stepno">3</span><div>進入「錢包」（Wallet），尋找「銀行卡」（Cards／Bank Cards）或「新增銀行卡」。</div></div>
+  <div class="step"><span class="stepno">4</span><div>依頁面要求閱讀並同意微信支付／財付通相關服務協議，依序完成開通、資料填寫及驗證。</div></div>
+ </div>
+ <div class="warning"><b>看不到「服務／錢包」怎麼辦？</b>先更新 WeChat 至最新版，確認帳號已完成登入；再查看「我 → 設定」內是否有「通用／輔助功能／工具」等支付入口。若仍沒有，可能與帳號地區、註冊時間、風控或資格有關，請使用 App 內官方客服，不建議使用網路上來路不明的啟用 QR Code。</div>
+</section>
+
+<section id="verify">
+ <div class="section-head"><span class="num">05</span><h2>完成微信支付身分認證（如系統要求）</h2></div>
+ <p>綁定境外信用卡時，系統可能要求補充身分資料。請按照錢包內「身分資訊／Identity Information」頁面顯示的證件選項辦理。</p>
+ <div class="card">
+  <h3>台灣居民常見準備資料</h3>
+  <ul><li>有效的台灣居民來往大陸通行證（台胞證），若系統列出該選項。</li><li>依頁面要求填寫證件號碼、姓名等資料；英文姓名或拼音須與證件及銀行資料一致。</li><li>若要求上傳證件照片或進行人臉辨識，請在官方 App 內依提示完成。</li><li>若頁面提供「台灣居民居住證」等其他證件選項，僅在本人確實持有該證件時選用。</li></ul>
+ </div>
+ <div class="danger">請勿將台胞證照片、完整信用卡卡號、CVV、安全碼、簡訊驗證碼或支付密碼傳給陌生人或非官方客服。操作時確認是在 WeChat 官方 App 內。</div>
+</section>
+
+<section id="bind">
+ <div class="section-head"><span class="num">06</span><h2>綁定台灣銀行發行的信用卡</h2></div>
+ <p class="lead">一般路徑為「我 → 服務 → 錢包 → 銀行卡 → 新增銀行卡」。不同版本可能略有差異。</p>
+ <div class="card">
+  <div class="step"><span class="stepno">1</span><div>在錢包內點選「銀行卡」（Cards／Bank Cards），再選擇「新增銀行卡」（Add a Bank Card）。</div></div>
+  <div class="step"><span class="stepno">2</span><div>依畫面輸入本人信用卡資料，包括卡號、有效期限及安全碼（CVV／CVC）。只在官方 App 的安全頁面輸入。</div></div>
+  <div class="step"><span class="stepno">3</span><div>選擇或確認卡片發卡地區、卡組織及持卡人資料；姓名、證件資料應與認證資料及發卡行紀錄一致。</div></div>
+  <div class="step"><span class="stepno">4</span><div>依指示完成銀行簡訊 OTP、銀行 App 驗證或其他 3-D Secure 驗證。驗證方式由發卡銀行決定。</div></div>
+  <div class="step"><span class="stepno">5</span><div>若系統要求，設定微信支付 6 位數支付密碼。這是付款驗證密碼，不等於微信登入密碼，也不應與提款卡密碼混用。</div></div>
+  <div class="step"><span class="stepno">6</span><div>回到銀行卡頁面確認卡片已成功新增。若出現失敗訊息，先記下錯誤代碼，再依「問題排除」處理。</div></div>
+ </div>
+ <div class="grid2">
+  <div class="mini"><b>常見國際卡組織</b>Visa、Mastercard、JCB、Diners Club、Discover 等；實際可用卡別以微信新增卡片頁面當下列示及發卡行授權為準。</div>
+  <div class="mini"><b>建議事前確認</b>信用卡已開啟海外／線上交易、可收銀行 OTP，且發卡行允許微信支付或境外第三方支付的驗證交易。</div>
+ </div>
+ <div class="warning"><b>台灣信用卡不保證張張可綁：</b>即使卡面有 Visa／Mastercard 標誌，發卡銀行仍可能因跨境風控、交易類型、卡片設定或驗證流程拒絕授權。綁卡結果以微信與發卡行的即時回覆為準。</div>
+</section>
+
+<section id="pay">
+ <div class="section-head"><span class="num">07</span><h2>在中國大陸使用微信支付</h2></div>
+ <div class="grid2">
+  <div class="card"><h3>方式 A｜掃描商家收款碼</h3><div class="step"><span class="stepno">1</span><div>開啟微信，點選右上角「＋」→「掃一掃」（Scan），或從服務頁進入掃碼。</div></div><div class="step"><span class="stepno">2</span><div>掃描商家提供的微信支付收款 QR Code。</div></div><div class="step"><span class="stepno">3</span><div>核對商家名稱、人民幣金額及付款方式。</div></div><div class="step"><span class="stepno">4</span><div>確認手續費及扣款卡片後，依提示輸入支付密碼或完成驗證。</div></div></div>
+  <div class="card"><h3>方式 B｜出示自己的付款碼</h3><div class="step"><span class="stepno">1</span><div>開啟「我 → 服務 → 收付款」（Money／Pay）。</div></div><div class="step"><span class="stepno">2</span><div>選擇「付款碼／Payment Code」。</div></div><div class="step"><span class="stepno">3</span><div>讓店員掃描付款碼，並留意畫面顯示的扣款方式。</div></div><div class="step"><span class="stepno">4</span><div>確認付款成功通知、交易紀錄及實際扣款金額。</div></div></div>
+ </div>
+ <div class="danger"><b>付款安全：</b>只掃描可信任商家的收款碼；付款前核對商家與金額。不要掃描陌生人傳來的「退款、解鎖、驗證」QR Code，也不要將自己的付款碼截圖傳給他人。</div>
+ <p>境外信用卡綁定後，主要用於支援微信支付的商戶消費。紅包、個人轉帳、收款、充值或部分小程序／交通等服務可能不支援境外卡，應以付款頁顯示的可用方式為準。</p>
+</section>
+
+<section id="fees">
+ <div class="section-head"><span class="num">08</span><h2>手續費、匯率與交易限制</h2></div>
+ <div class="card">
+  <h3>境外信用卡付款費用概念</h3>
+  <table><thead><tr><th>項目</th><th>說明</th></tr></thead><tbody>
+   <tr><td>微信支付服務費</td><td>公開支付指引常見規則為單筆人民幣 200 元（含）以下免收平台服務費；單筆超過人民幣 200 元，可能按該筆交易金額收取 3%。實際費率、優惠及計費方式以付款確認頁顯示為準。</td></tr>
+   <tr><td>發卡銀行費用</td><td>台灣發卡銀行可能另收海外交易服務費或依其匯率換算，與微信支付平台服務費不同。</td></tr>
+   <tr><td>匯率</td><td>通常依卡組織及發卡銀行的換匯規則計算，台幣入帳金額以銀行帳單為準。</td></tr>
+   <tr><td>退款</td><td>退款時間及平台費退還方式依原交易規則、商戶及發卡銀行處理進度而定。</td></tr>
+  </tbody></table>
+ </div>
+ <div class="warning"><b>交易額度不要只背網路文章：</b>微信支付的單筆、月累計、年累計額度會依身分認證狀態、卡片、帳戶及當期政策而異。請以錢包頁面、服務協議及付款確認畫面當下顯示為準；若單筆金額較大，出發前先確認限制。</div>
+ <p class="small">建議付款時選擇以人民幣（CNY／RMB）計價，若出現由商家或第三方提供的動態貨幣轉換選項，先比較匯率與費用再決定。</p>
+</section>
+
+<section id="trouble">
+ <div class="section-head"><span class="num">09</span><h2>常見問題與排除方式</h2></div>
+ <details><summary>找不到「服務」或「錢包」入口</summary><div class="answer">更新 WeChat 至最新版，確認已登入；查看「我」頁面是否顯示「服務／支付」。不同帳號或地區可能顯示不同入口。若仍無法使用，透過 App 內官方客服查詢帳戶資格，不要使用陌生人提供的啟用碼。</div></details>
+ <details><summary>台灣手機收不到微信或銀行簡訊</summary><div class="answer">確認 +886 國碼及手機號碼格式、手機訊號與簡訊攔截設定；確認門號可接收國際簡訊。銀行 OTP 另須確認發卡行登記手機正確，必要時聯絡電信業者或銀行客服。</div></details>
+ <details><summary>信用卡無法新增／綁定失敗</summary><div class="answer">檢查卡片是否在微信當下支援的卡組織範圍、卡號與有效期限是否正確、姓名是否一致；聯絡發卡銀行確認是否拒絕境外驗證或小額授權、是否開啟海外線上交易及 3-D Secure。不要短時間反覆送出大量綁卡請求。</div></details>
+ <details><summary>已綁卡，但付款時顯示不支援</summary><div class="answer">境外卡通常只適用於符合條件的商戶消費，不等於可使用微信所有支付功能。確認商家接受微信支付、交易類型支援境外卡、金額未超過限制，並檢查付款頁是否選到正確卡片。</div></details>
+ <details><summary>付款被拒絕或要求重新驗證</summary><div class="answer">核對餘額／可用額度、卡片效期、銀行風控通知、微信帳戶安全提示及網路連線。若銀行拒絕授權，聯絡發卡行；若微信提示帳戶風險或限制，使用 App 內官方申訴／客服流程。</div></details>
+ <details><summary>可以用台灣身分證完成微信支付實名認證嗎？</summary><div class="answer">不要預設可以。台灣居民通常依頁面選擇台灣居民來往大陸通行證（台胞證）或本人持有且頁面列出的其他有效證件。證件種類以微信支付實名認證頁面的當下選項為準。</div></details>
+ <details><summary>綁定台灣信用卡後，可以收紅包或轉帳給朋友嗎？</summary><div class="answer">通常不能把境外信用卡當成中國境內銀行帳戶或微信零錢使用。境外卡主要用於符合條件的商戶付款；紅包、個人轉帳、收款及充值等功能可能受限。</div></details>
+ <details><summary>一定要有中國大陸 +86 手機號碼嗎？</summary><div class="answer">不一定。官方及地方政府支付指引允許使用可接收驗證簡訊的境外手機號碼；但個別帳號驗證仍可能有額外要求，應以註冊及支付頁面的實際提示為準。</div></details>
+</section>
+
+<section id="checklist">
+ <div class="section-head"><span class="num">10</span><h2>出發前檢查清單</h2></div>
+ <p class="lead">可直接在此勾選；勾選狀態只保留在目前開啟的網頁工作階段，重新整理後可能重置。</p>
+ <div class="card checklist" id="checks">
+  <label><input type="checkbox">已從 App Store／Google Play 安裝官方 WeChat</label>
+  <label><input type="checkbox">已使用台灣 +886 手機號碼註冊並成功登入</label>
+  <label><input type="checkbox">已找到「我 → 服務 → 錢包」入口</label>
+  <label><input type="checkbox">已備妥有效台胞證（如系統要求身分認證）</label>
+  <label><input type="checkbox">已確認信用卡卡組織與發卡銀行支援情形</label>
+  <label><input type="checkbox">已確認海外／線上交易功能及銀行 OTP 可用</label>
+  <label><input type="checkbox">已成功新增信用卡並設定支付密碼（如要求）</label>
+  <label><input type="checkbox">已了解單筆服務費、銀行海外交易費及匯率</label>
+  <label><input type="checkbox">已準備其他付款備案（Alipay、現金或實體信用卡）</label>
+  <label><input type="checkbox">已設定手機螢幕鎖定，並妥善保管驗證碼與密碼</label>
+ </div>
+ <div class="notice"><b>實用建議：</b>不要把微信支付當成唯一付款方式。赴中國大陸前，建議同時準備另一種行動支付方式、少量人民幣現金及可海外刷卡的實體信用卡，以應付商家不支援或帳戶臨時風控的情況。</div>
+</section>
+
+<section id="sources">
+ <div class="section-head"><span class="num">＋</span><h2>官方參考資料與更新說明</h2></div>
+ <p>本手冊依公開官方資料整理。微信 App 介面、支援卡別、驗證要求、費率及交易額度可能調整；如本手冊與 App 畫面或官方最新條款不同，請以官方當下資訊為準。</p>
+ <ul class="source-list">
+  <li><a href="https://apps.apple.com/app/wechat/id414478124" target="_blank" rel="noopener">Apple App Store｜WeChat 官方下載頁</a></li>
+  <li><a href="https://play.google.com/store/apps/details?id=com.tencent.mm" target="_blank" rel="noopener">Google Play｜WeChat 官方下載頁</a></li>
+  <li><a href="https://www.tencent.com/zh-cn/tencent-further-enhances-digital-payment-services-for-visitors-to-china-with-process-streamlined-and-more-overseas-wallets-linked/" target="_blank" rel="noopener">騰訊官方｜提升外籍來華人士移動支付體驗（2024-04-12）</a></li>
+  <li><a href="https://english.www.gov.cn/2025special/bizexpatsinchina2025" target="_blank" rel="noopener">中國政府網｜在華工作生活指引：移動支付</a></li>
+  <li><a href="https://english.shanghai.gov.cn/en-BankingServices/20231215/fe3a293d065f40e0a7f740aa88edb050.html" target="_blank" rel="noopener">上海市政府英文網｜境外銀行卡與微信支付使用說明</a></li>
+  <li><a href="https://english.bjchy.gov.cn/overseas-bank-cards-accepted-weixin-pay-and-alipay" target="_blank" rel="noopener">北京市朝陽區政府｜境外銀行卡、身分文件、費用與額度 FAQ</a></li>
+ </ul>
+ <p class="small">整理日期：2026 年 11 月 7 日。此文件為一般操作資訊，不構成銀行、支付機構或法律承諾；實際交易是否成功由微信支付、商戶及發卡銀行決定。</p>
+</section>
+</main>
+</div>
+<footer class="footer"><div class="wrap"><b>台灣手機安裝微信・信用卡付款設定教學手冊</b><div class="small" style="color:#c5d8cd">單一 HTML 文件｜可離線閱讀（外部官方連結需連網）｜可列印或另存 PDF</div></div></footer>
+<script>
+document.querySelectorAll('a[href^="#"]').forEach(a=>a.addEventListener('click',e=>{const el=document.querySelector(a.getAttribute('href'));if(el){e.preventDefault();el.scrollIntoView({behavior:'smooth'});}}));
+</script>
+</body>
+</html>
